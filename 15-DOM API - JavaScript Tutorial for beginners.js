@@ -13,3 +13,6 @@ document.appendChild(myHeading)
 document.body.appendChild(myHeading)
 
 myHeading.innerText = 'I AM YOUR HEADER'
+
+myHeading.innerText = 'Cucumber 🥒'
+

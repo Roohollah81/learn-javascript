@@ -22,21 +22,52 @@
 
 //-----------------------------
 
+// const input = document.createElement('input')
+
+// input.placeholder = 'TO DO'
+
+// document.body.appendChild(input)
+
+// button.value = 'ADD'
+
+// document.body.appendChild(button)
+
+// button.innerText = 'ADD'
+
+// button.addEventListener('click', () => {
+//     const div = document.createElement('div')
+//         div.innerText = input.value
+//         document.body.appendChild(div)
+// })
+
+//-----------------------------
+
+document.body.innerText = ''
+
+const form = document.createElement('form')
+document.body.appendChild(form)
+
 const input = document.createElement('input')
-
 input.placeholder = 'TO DO'
+form.appendChild(input)
 
-document.body.appendChild(input)
-
-button.value = 'ADD'
-
-document.body.appendChild(button)
-
+const button = document.createElement('button')
 button.innerText = 'ADD'
+button.role = 'submit'
+form.appendChild(button)
 
-button.addEventListener('click', () => {
-    const div = document.createElement('div')
-        div.innerText = input.value
-        document.body.appendChild(div)
-})
+const ul = document.createElement('ul')
+document.body.appendChild(el)
 
+const removeElement = el => {
+    console.log(el)
+}
+
+form.onsubmit = (e) => {
+    e.preventDefault()
+    const li = document.createElement('li')
+    ul.appendChild(li)
+    li.innerText = input.value
+    li.onclick = removeElement.bind(null, li)
+    input.value = ''
+}

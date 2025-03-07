@@ -77,3 +77,17 @@ document.body.style.padding = '16px'
 input.style.marginRight = '8px'
 
 document.body.style.backgroundColor = 'white'
+
+document.body.attributes
+
+document.body.setAttribute('class', blue)
+
+document.getElementsByClassName('blue')
+
+document.getElementsByTagName('li')
+
+document.querySelector('.blue')
+
+document.querySelectorAll('.blue')
+
+document.querySelectorAll('li')

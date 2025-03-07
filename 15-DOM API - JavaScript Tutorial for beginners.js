@@ -71,3 +71,9 @@ form.onsubmit = (e) => {
     li.onclick = removeElement.bind(null, li)
     input.value = ''
 }
+
+document.body.style.padding = '16px'
+
+input.style.marginRight = '8px'
+
+document.body.style.backgroundColor = 'white'

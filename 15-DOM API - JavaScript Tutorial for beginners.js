@@ -27,3 +27,9 @@ const input = document.createElement('input')
 input.placeholder = 'TO DO'
 
 document.body.appendChild(input)
+
+button.value = 'ADD'
+
+document.body.appendChild(button)
+
+button.innerText = 'ADD'

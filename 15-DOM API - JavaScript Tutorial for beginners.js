@@ -16,3 +16,6 @@ myHeading.innerText = 'I AM YOUR HEADER'
 
 myHeading.innerText = 'Cucumber 🥒'
 
+const now = new Date()
+
+myHeading.innerText = `${now.getHours}:${now.getMinutes}`

@@ -11,3 +11,5 @@ const myHeading = document.createElement('h1')
 document.appendChild(myHeading)
 
 document.body.appendChild(myHeading)
+
+myHeading.innerText = 'I AM YOUR HEADER'

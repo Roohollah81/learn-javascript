@@ -35,6 +35,8 @@ document.body.appendChild(button)
 button.innerText = 'ADD'
 
 button.addEventListener('click', () => {
-    console.log('YOu clicked me dude!')
+    const div = document.createElement('div')
+        div.innerText = input.value
+        document.body.appendChild(div)
 })
 
